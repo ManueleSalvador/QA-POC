@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.smartbear.junitsupportexample.ExampleTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 0.116 s <<< FAILURE! - in com.smartbear.junitsupportexample.ExampleTest
+QA_35  Time elapsed: 0.015 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <4> but was: <3>
+	at com.smartbear.junitsupportexample.ExampleTest.QA_35(ExampleTest.java:17)
+
+QA_36{String}[1]  Time elapsed: 0.035 s  <<< ERROR!
+java.lang.NumberFormatException: Cannot parse null string
+	at com.smartbear.junitsupportexample.ExampleTest.QA_36(ExampleTest.java:37)
+
+QA_36{String}[2]  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.smartbear.junitsupportexample.ExampleTest.QA_36(ExampleTest.java:37)
+
+QA_38  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: failing test
+	at com.smartbear.junitsupportexample.ExampleTest.QA_38(ExampleTest.java:29)
+
