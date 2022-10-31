@@ -2,12 +2,12 @@ package com.smartbear.junitsupportexample;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.NullSource;
+//import org.junit.jupiter.params.provider.NullSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+//import static org.junit.jupiter.api.Assertions.fail;
 
 public class ExampleTest {
 
@@ -31,7 +31,7 @@ public class ExampleTest {
 
     // will link to a test case named com.smartbear.junitsupportexample.ExampleTest.parametrizedTest (result aggregated to one test execution)
     @ParameterizedTest
-    @NullSource
+    //@NullSource
     @ValueSource(strings = { "1", "2", "3" })
     void QA_36(String numberAsText) {
         assertTrue(Integer.parseInt(numberAsText) > 0);
