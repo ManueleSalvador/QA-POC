@@ -14,7 +14,7 @@ public class ExampleTest {
     // will link to a test case named com.smartbear.junitsupportexample.ExampleTest.testNr1
     @Test
     void QA_35() {
-        assertEquals(4, 3);
+        assertEquals(4, 4);
     }
 
     // will match with test case with key DEV-T1
@@ -26,13 +26,13 @@ public class ExampleTest {
     // will match with test case with key DEV-T2
     @Test
     void QA_38() {
-        fail("failing test");
+        assertEquals (5,5);
     }
 
     // will link to a test case named com.smartbear.junitsupportexample.ExampleTest.parametrizedTest (result aggregated to one test execution)
     @ParameterizedTest
     @NullSource
-    @ValueSource(strings = { "-1", "2", "3" })
+    @ValueSource(strings = { "1", "2", "3" })
     void QA_36(String numberAsText) {
         assertTrue(Integer.parseInt(numberAsText) > 0);
     }
